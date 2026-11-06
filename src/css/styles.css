@@ -8,3 +8,42 @@
 
 }
 
+header{
+    background-color: var(--color-neutral-1);
+    padding: 12px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+             width: 80px;
+        }
+
+        ul{
+            display: none;
+
+            &.show{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                gap: 0.5px;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                background-color: var(--color-neutral-1);
+                left: 0;
+                padding: 1rem;
+            }
+        }
+
+        .btn-default{
+            display: none;
+        }
+       
+    }
+}
