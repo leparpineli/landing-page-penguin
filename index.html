@@ -11,11 +11,14 @@
     <!-- Header -->
     <header id="header">
         <nav class="navbar">
-            <img 
-            src="images/logo_penguin.png" 
-            alt="Logo Penguin" 
-            class="logo"
-            >
+            <a href="#home" class="brand">
+                <img 
+                src="images/logo_penguin.png" 
+                alt="Logo Penguin" 
+                class="logo"
+                >
+                <span class="brand-name">Editora <strong>Penguin</strong></span>
+            </a>
 
             <button class="btn btn-mobile">
                 <i class="fa-solid fa-bars"></i>
@@ -42,6 +45,11 @@
         </nav>
     </header>
 
+    <div class="header-banner">
+        <i class="fa-solid fa-book-open"></i>
+        Desde 1935 • A maior coleção de clássicos do mundo
+    </div>
+
     <!-- Main -->
     <main id="container">
         <!-- Home -->
@@ -64,14 +72,31 @@
 
             <!-- botoes -->
             <div class="home-actions">
-                <a href="#" class="btn btn-default">
+                <a href="#trending" class="btn btn-default">
                     Conhecer  
                 </a>
 
-                 <a href="#" class="btn btn-outlined">
+                 <a href="#newsletter" class="btn btn-outlined">
                     Contatar
                 </a>
+            </div>
 
+            <!-- estatísticas da editora -->
+            <div class="home-stats">
+                <div class="stat-item">
+                    <strong>+1.000</strong>
+                    <span>Clássicos Publicados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>+85 Anos</strong>
+                    <span>Tradição Editorial</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>100%</strong>
+                    <span>Traduções Diretas</span>
+                </div>
             </div>
                  
          </section>
@@ -292,13 +317,62 @@
 
            </section>
 
+           <!-- Clube Penguin / Newsletter -->
+           <section id="newsletter">
+            <div class="newsletter-box">
+                <div class="newsletter-text">
+                    <h2>Clube de Leitores <span>Penguin</span></h2>
+                    <p>
+                        Inscreva-se gratuitamente para receber lançamentos de clássicos,
+                        trechos comentados e descontos exclusivos diretamente no seu e-mail.
+                    </p>
+                </div>
+
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Digite seu melhor e-mail..." required>
+                    <button type="submit" class="btn btn-default">
+                        Inscrever-se
+                    </button>
+                </form>
+                <p class="newsletter-feedback" id="newsletter-feedback"></p>
+            </div>
+           </section>
+
     </main>
 
     <!--footer-->
     <footer>
-        Copyright 2026
-        <i class="fa-regular fa-copyright"></i>
-        Feito por Letícia Parpineli
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo_penguin.png" alt="Logo Penguin" class="footer-logo">
+                <p>Clássicos do mundo todo em edições cuidadosas e acessíveis.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#trending">Destaques</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="#products">Novidades</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/penguincompanhia/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/cia_das_letras" target="_blank" aria-label="X / Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@companhiadasletras" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Copyright 2026
+            <i class="fa-regular fa-copyright"></i>
+            Feito por Letícia Parpineli
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
