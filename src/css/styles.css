@@ -197,7 +197,7 @@ header{
 
     .trending-cards {
 
-           .trending-cards {
+        .trending-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,6 +216,12 @@ header{
         .trending-card {
             img {
                 width: clamp(300px, 5vw, 600px);
+                transition: transform 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.08) 
+                    translateY(-8px);
+                }
             }
         }
 
@@ -233,7 +239,7 @@ header{
         .trending-rate p {
             font-size: 1.5rem;
             font-weight: 700;
-            color: 696969;
+            color: #040404;
         }
     }
 }
