@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Editora Penguin</title>
 </head>
@@ -176,51 +176,118 @@
                 Novidades
             </h2>
 
-            <div class="products-cards">
-                <div class="product-card">
-                    <img src="images/products/jane.webp" alt="Jane">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prev-btn" aria-label="Anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
 
-                    <div class="product-content">
-                        <h3>
-                            Jane
-                            <span>Charlotte Bronte</span>
-                        </h3>
+                <div class="products-cards" id="carousel">
+                    <!-- Livro 1 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-1.webp" alt="Carmilla">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                Carmilla
+                                <span>Sheridan Le Fanu</span>
+                            </h3>
+                            <p class="product-description">
+                                Um clássico da ficção gótica sobre a misteriosa amizade entre a jovem Laura e sua enigmática hóspede Carmilla.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Livro 2 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-2.webp" alt="O Corvo">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                O Corvo
+                                <span>Edgar Allan Poe</span>
+                            </h3>
+                            <p class="product-description">
+                                Poemas e contos sombrios do mestre do mistério e do terror psicológico, liderados pelo imortal poema O Corvo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Livro 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-3.webp" alt="Cartas a um Jovem Poeta">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                Cartas a um Jovem Poeta
+                                <span>Rainer Maria Rilke</span>
+                            </h3>
+                            <p class="product-description">
+                                Dez cartas inspiradoras sobre arte, solidão, criação literária e o sentido da vida escritas a um jovem poeta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Livro 4 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-4.webp" alt="Luar">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                Luar
+                                <span>Guy de Maupassant</span>
+                            </h3>
+                            <p class="product-description">
+                                Contos brilhantes e sensíveis que retratam com delicadeza as paixões e contradições da alma humana.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Livro 5 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-5.webp" alt="Noites Brancas">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                Noites Brancas
+                                <span>Fiódor Dostoiévski</span>
+                            </h3>
+                            <p class="product-description">
+                                A história lírica de um sonhador solitário que se apaixona nas noites claras de São Petersburgo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Livro 6 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/products/photo-6.webp" alt="O Quebra-Nozes">
+                        </div>
+
+                        <div class="product-content">
+                            <h3>
+                                O Quebra-Nozes
+                                <span>E. T. A. Hoffmann</span>
+                            </h3>
+                            <p class="product-description">
+                                O conto encantado de Natal em que o brinquedo de Marie ganha vida para enfrentar o Rei dos Camundongos.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                 <div class="product-card">
-                    <img src="images/products/MobyDick.webp" alt="Moby Dick">
-
-                    <div class="product-content">
-                        <h3>
-                            Moby Dick
-                            <span>Herman Melville</span>
-                        </h3>
-                    </div>
-                </div>
-
-                 <div class="product-card">
-                    <img src="images/products/odisseia.webp" alt="odisseia">
-
-                    <div class="product-content">
-                        <h3>
-                            A Odisséia
-                            <span>Homero</span>
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/products/PhantomoftheOpera.webp" alt="fantasma da opera">
-
-                    <div class="product-content">
-                        <h3>
-                            O Fantasma da Ópera
-                            <span>Gaston Leroux</span>
-                        </h3>
-                    </div>
-                </div>
-
+                <button class="carousel-btn next" id="next-btn" aria-label="Próximo">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
 
            </section>

@@ -17,3 +17,17 @@ window.addEventListener('scroll', () => {
       header.style.boxShadow = 'none';
    }
 })
+
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+const scrollAmount = 284;
+
+nextBtn.addEventListener('click', () => {
+   carousel.scrollLeft += scrollAmount;
+});
+
+prevBtn.addEventListener('click', () => {
+   carousel.scrollLeft -= scrollAmount;
+});
